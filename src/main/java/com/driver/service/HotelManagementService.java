@@ -13,8 +13,7 @@ import java.util.List;
 @Service
 public class HotelManagementService {
 
-    @Autowired
-    HotelRepository hotelRepository;
+    HotelRepository hotelRepository = new HotelRepository();
 
     public boolean addHotel(Hotel hotel) {
         return hotelRepository.addHotel(hotel);
